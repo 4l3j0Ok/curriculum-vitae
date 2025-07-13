@@ -1,0 +1,14 @@
+services:
+  frontend:
+    image: alejoide/curriculum-vitae:latest
+    container_name: curriculum-vitae
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    networks:
+      - default
+      - nginx-proxy
+
+networks:
+  nginx-proxy:
+    external: true
