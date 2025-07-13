@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import ProfilePicture from "../assets/profile.webp";
+---
+
+<header>
+	<Image src={ProfilePicture} alt="Alejo Sarmiento" />
+	<div class="profile-header">
+		<div class="profile-info">
+			<h1>Alejo Sarmiento</h1>
+			<p>SRE y Desarrollador de software</p>
+		</div>
+	</div>
+</header>
+
+<style>
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 4em;
+	}
+	img {
+		width: 240px;
+		height: auto;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	}
+	.profile-info {
+		text-align: right;
+	}
+
+	@media (max-width: 900px) {
+		img {
+			width: 180px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		img {
+			width: 120px;
+		}
+	}
+</style>

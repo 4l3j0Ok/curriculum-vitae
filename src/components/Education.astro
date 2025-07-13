@@ -1,0 +1,40 @@
+---
+import { education } from "../../data";
+---
+
+<section class="education" id="education">
+    <h2 class="title">
+        Educación <a href="#education" class="pilcrow">&para;</a>
+    </h2>
+    <hr />
+    {
+        education.map((school) => (
+            <article class="exp-item">
+                <div class="exp-header">
+                    <div class="exp-title">
+                        <h3>{school.institution}</h3>
+                        <p>
+                            <b>Título</b>: {school.degree}
+                        </p>
+                    </div>
+                    <div class="space-time">
+                        <h3>{school.location}</h3>
+                        <p>{school.period}</p>
+                    </div>
+                </div>
+            </article>
+        ))
+    }
+</section>
+
+<style>
+    .exp-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .exp-header .space-time {
+        text-align: right;
+    }
+</style>

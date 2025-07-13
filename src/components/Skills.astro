@@ -1,0 +1,20 @@
+---
+import { skills } from "../../data"
+---
+
+<section class="skills" id="skills">
+    <h2 class="title">
+        Habilidades <a href="#skills" class="pilcrow">&para;</a>
+    </h2>
+    <hr />
+    {skills.sections.map((skill) => (
+    <h3>{skill.title}</h3>
+    <ul>
+        {skill.categories.map((category) => (
+        <li>
+            <b>{category.name}:</b> {category.items.join(", ")}
+        </li>
+        ))}
+    </ul>
+    ))}
+</section>

@@ -1,0 +1,42 @@
+---
+import { experience } from "../../data";
+---
+
+<section class="experience" id="experience">
+    <h2>
+        Experiencia profesional <a href="#experience" class="pilcrow">&para;</a>
+    </h2>
+    <hr />
+    {
+        experience.map((job) => (
+            <article class="exp-item">
+                <div class="exp-header">
+                    <div class="exp-title">
+                        <h3>{job.company}</h3>
+                        <p>{job.position}</p>
+                    </div>
+                    <div class="space-time">
+                        <h3>{job.location}</h3>
+                        <p>{job.period}</p>
+                    </div>
+                </div>
+                <ul>
+                    {job.responsibilities.map((responsability) => (
+                        <li>{responsability}</li>
+                    ))}
+                </ul>
+            </article>
+        ))
+    }
+</section>
+<style>
+    .exp-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .exp-header .space-time {
+        text-align: right;
+    }
+</style>

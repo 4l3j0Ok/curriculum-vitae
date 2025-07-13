@@ -3,20 +3,111 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Alejo Sarmiento - Currículum Vitae</title>
+		<meta name="description" content="Currículum Vitae de Alejo Sarmiento" />
+		<meta name="author" content="Alejo Sarmiento" />
+		<!-- Meta tags for social media -->
+		<meta property="og:url" content="https://4l3j0ok.github.io/institute-second-year/projects/edi/01-curriculum-vitae/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Alejo Sarmiento - Currículum Vitae">
+		<meta property="og:description" content="Currículum Vitae de Alejo Sarmiento">
+		<meta property="og:image" content="/og-image.webp">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="4l3j0ok.github.io">
+		<meta property="twitter:url" content="https://4l3j0ok.github.io/institute-second-year/projects/edi/01-curriculum-vitae/">
+		<meta name="twitter:title" content="Alejo Sarmiento - Currículum Vitae">
+		<meta name="twitter:description" content="Currículum Vitae de Alejo Sarmiento">
+		<meta name="twitter:image" content="/og-image.webp">
 	</head>
 	<body>
-		<slot />
+		<div class="content">
+			<slot />
+		</div>
 	</body>
 </html>
 
-<style>
+<style is:global>
 	html,
 	body {
-		margin: 0;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		width: 100%;
-		height: 100%;
+	}
+	.content {
+		width: 80%;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	section {
+		margin-bottom: 3em;
+	}
+	h3 {
+		margin: 0;
+	}
+
+	hr {
+		margin-bottom: 1.5em;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+
+	a:hover {
+		color: #555555;
+	}
+
+	.pilcrow {
+		text-decoration: none;
+		color: #777;
+	}
+
+	.onlyprint {
+		display: none;
+	}
+
+	@media (max-width: 900px) {
+		body {
+			font-size: 0.9em;
+		}
+
+		.contentsection {
+    margin-bottom: 3em;
+} {
+			width: 90%;
+		}
+	}
+
+	@media (max-width: 600px) {
+		body {
+			font-size: 0.8em;
+		}
+
+		.content {
+			width: 95%;
+		}
+	}
+
+	@media print {
+		.noprint {
+			display: none;
+		}
+
+		.pilcrow {
+			display: none;
+		}
+
+		.onlyprint {
+			display: inline-block;
+		}
 	}
 </style>
