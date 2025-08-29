@@ -3,7 +3,7 @@ export const experience = [
     company: "Leafnoise",
     position: "Desarrollador backend",
     location: "Buenos Aires, Argentina",
-    period: "Agosto 2017 – Septiembre 2022",
+    period: "Agosto 2020 – Septiembre 2022",
     responsibilities: [
       "Desarrollo de producto Moorea para clientes de Leafnoise.",
       "Creación de APIs y servicios web RESTful y SOAP.",
