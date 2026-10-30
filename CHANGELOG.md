@@ -1,3 +1,9 @@
+# [1.2.0](https://github.com/[secure]/curriculum-vitae/compare/1.1.1...1.2.0) (2026-10-30)
+
+### Features
+
+* add download button and upgrade deps ([eec816f](https://github.com/[secure]/curriculum-vitae/commit/eec816ff0f2d73b08c087552983350018782f69c))
+
 ## [1.1.1](https://github.com/[secure]/curriculum-vitae/compare/1.1.0...1.1.1) (2026-10-30)
 
 ### Bug Fixes
