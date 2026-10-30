@@ -1,3 +1,7 @@
+---
+import DownloadButton from "../components/DownloadButton.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -25,6 +29,12 @@
 		<div class="content">
 			<slot />
 		</div>
+		<DownloadButton />
+		<script>
+			if (new URLSearchParams(window.location.search).has("print")) {
+				window.addEventListener("load", () => window.print());
+			}
+		</script>
 	</body>
 </html>
 
