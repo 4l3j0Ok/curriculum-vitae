@@ -1,0 +1,16 @@
+# Ref: https://github.com/semantic-release/semantic-release
+steps:
+  - name: semrel
+    image: ghcr.io/voxpupuli/semantic-release:latest
+    commands:
+      - git config --global user.email "ci@alejoide.com"
+      - git config --global user.name "CI Bot"
+      - semantic-release
+    environment:
+      GITHUB_TOKEN:
+        from_secret: github_token
+when:
+  event:
+    - push
+  branch:
+    - main
