@@ -1,12 +1,20 @@
+---
+const initialExperienceDate: Date = new Date(2020, 7, 19);
+const experienceYears: number = Math.floor(
+    (Date.now() - initialExperienceDate.getTime()) /
+        (1000 * 60 * 60 * 24 * 365.25),
+);
+---
 <section class="summary" id="summary">
     <h2 class="title">Resumen <a href="#summary" class="pilcrow">&para;</a></h2>
     <hr />
     <p>
-        Soy SRE/DevOps y desarrollador de software con más de cuatro años de
-        experiencia.
+        Soy SRE/DevOps y desarrollador de software con más de {experienceYears}
+        años de experiencia, especializado en backend e infraestructura de
+        software.
         <br />Optimizo infraestructuras para mejorar confiabilidad y
-        rendimiento, con enfoque proactivo y habilidades sólidas en desarrollo
-        web.
+        rendimiento, con enfoque proactivo, habilidades sólidas en desarrollo
+        web y experiencia en inteligencia artificial.
         <br />Busco un entorno desafiante donde aplicar mis habilidades y seguir
         aprendiendo.
     </p>

@@ -28,8 +28,10 @@ export const experience = [
       "Despliegue de servicios Java con Jboss EAP/ WildFly.",
       "Conocimiento en herramientas de IaC como Terraform, Ansible, Vagrant.",
       "Creación y administración de paquetes con Helm.",
+      "Administración de múltiples infraestructuras, tanto internas como de clientes.",
       "Monitoreo y observabilidad de aplicaciones.",
-      "Scripting con Bash, Powershell y Python."
+      "Scripting con Bash, Powershell y Python.",
+      "Implementación de RAG, creación de harnesses para proyectos de desarrollo y despliegue de LLMs en cloud y on-premise."
     ]
   }
 ];
@@ -60,11 +62,11 @@ export const skills = {
         },
         {
           "name": "Backend",
-          "items": ["Flask", "FastAPI"]
+          "items": ["Flask", "FastAPI", "SQLModel", "SQLAlchemy", "pytest", "REST y SOAP"]
         },
         {
           "name": "Frontend",
-          "items": ["Astro", "React"]
+          "items": ["Astro", "React", "Next.js", "Vite", "Tailwind CSS", "Figma"]
         },
         {
           "name": "Base de datos",
@@ -105,7 +107,20 @@ export const skills = {
         },
         {
           "name": "IaC",
-          "items": ["Terraform"]
+          "items": ["Terraform", "Ansible"]
+        }
+      ]
+    },
+    {
+      "title": "Tecnologías que utilizo en Inteligencia Artificial:",
+      "categories": [
+        {
+          "name": "Herramientas y modelos",
+          "items": ["OpenCode", "Claude", "Ollama", "LM Studio", "LiteLLM", "Hugging Face"]
+        },
+        {
+          "name": "Técnicas",
+          "items": ["RAG", "Harnesses para desarrollo", "Despliegue de LLMs (cloud y on-premise)"]
         }
       ]
     }
