@@ -1,3 +1,9 @@
+## [1.2.1](https://github.com/[secure]/curriculum-vitae/compare/1.2.0...1.2.1) (2026-10-30)
+
+### Bug Fixes
+
+* layout button style fix ([8df30a8](https://github.com/[secure]/curriculum-vitae/commit/8df30a81312ea505a6ab07959629271e5cb19fa1))
+
 # [1.2.0](https://github.com/[secure]/curriculum-vitae/compare/1.1.1...1.2.0) (2026-10-30)
 
 ### Features
