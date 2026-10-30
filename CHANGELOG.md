@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/[secure]/curriculum-vitae/compare/1.1.0...1.1.1) (2026-10-30)
+
+### Bug Fixes
+
+* pin node version to 24 in Dockerfile ([d19cc82](https://github.com/[secure]/curriculum-vitae/commit/d19cc82d8df0aa36acbfa9dcfae917a3f7914d78))
+
 # [1.1.0](https://github.com/[secure]/curriculum-vitae/compare/1.0.2...1.1.0) (2026-10-30)
 
 ### Features
