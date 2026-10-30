@@ -1,5 +1,5 @@
 # https://docs.astro.build/en/recipes/docker/#static
-FROM node:lts-alpine AS build
+FROM node:24-alpine AS build
 WORKDIR /app
 
 ENV PNPM_HOME="/pnpm"
