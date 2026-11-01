@@ -1,3 +1,9 @@
+# [1.3.0](https://github.com/[secure]/curriculum-vitae/compare/1.2.1...1.3.0) (2026-11-01)
+
+### Features
+
+* download pdf instead of print page ([0c65802](https://github.com/[secure]/curriculum-vitae/commit/0c65802696857c9feb1210afc5bf528c16db5c90))
+
 ## [1.2.1](https://github.com/[secure]/curriculum-vitae/compare/1.2.0...1.2.1) (2026-10-30)
 
 ### Bug Fixes
