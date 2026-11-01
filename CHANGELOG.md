@@ -1,3 +1,9 @@
+## [1.3.1](https://github.com/[secure]/curriculum-vitae/compare/1.3.0...1.3.1) (2026-11-01)
+
+### Bug Fixes
+
+* update data.ts with cloud services ([f448abf](https://github.com/[secure]/curriculum-vitae/commit/f448abfccebe5b4f1e8fe4dbf01f726bf09dea6d))
+
 # [1.3.0](https://github.com/[secure]/curriculum-vitae/compare/1.2.1...1.3.0) (2026-11-01)
 
 ### Features
