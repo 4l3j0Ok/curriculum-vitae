@@ -2,20 +2,15 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<button
-    type="button"
+<a
+    href="/Alejo%20Sarmiento%20Curriculum%20Vitae.pdf"
+    download="Alejo Sarmiento Curriculum Vitae.pdf"
     class="download-button noprint"
     aria-label="Descargar Currículum Vitae"
 >
     <Icon name="mdi:download" />
     <span>Descargar Currículum Vitae</span>
-</button>
-
-<script>
-    document
-        .querySelector(".download-button")
-        ?.addEventListener("click", () => window.print());
-</script>
+</a>
 
 <style>
     .download-button {
@@ -37,6 +32,7 @@ import { Icon } from "astro-icon/components";
         white-space: nowrap;
         cursor: pointer;
         font: inherit;
+        text-decoration: none;
         transition:
             gap 0.3s ease,
             background-color 0.2s ease,
