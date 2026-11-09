@@ -1,0 +1,19 @@
+---
+import { languages } from "../data";
+---
+
+<section class="languages" id="languages">
+    <h2 class="title">
+        Idiomas <a href="#languages" class="pilcrow">&para;</a>
+    </h2>
+    <hr />
+    <ul>
+        {
+            languages.map((language) => (
+                <li>
+                    <b>{language.name}</b> ({language.level})
+                </li>
+            ))
+        }
+    </ul>
+</section>

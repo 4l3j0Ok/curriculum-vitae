@@ -1,15 +1,46 @@
 ---
 import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 import ProfilePicture from "../assets/profile.webp";
 ---
 
 <header>
-	<Image src={ProfilePicture} alt="Alejo Sarmiento" />
+	<Image src={ProfilePicture} alt="Alejo Sarmiento" loading="eager" />
 	<div class="profile-header">
 		<div class="profile-info">
 			<h1>Alejo Sarmiento</h1>
 			<p>SRE y Desarrollador de software</p>
 		</div>
+		<ul class="contact">
+			<li>
+				<a href="mailto:alejofsarmiento@gmail.com"
+					><Icon name="mdi:email" /> alejofsarmiento@gmail.com</a
+				>
+			</li>
+			<li>
+				<a href="tel:+5492224501572"
+					><Icon name="mdi:phone" /> +54 9 2224 501572</a
+				>
+			</li>
+			<li>
+				<Icon name="mdi:map-marker" /> San Vicente, Buenos Aires, Argentina
+			</li>
+			<li>
+				<a href="https://alejoide.com" target="_blank"
+					><Icon name="mdi:world" /> alejoide.com</a
+				>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/alejoide" target="_blank"
+					><Icon name="mdi:linkedin" /> linkedin.com/in/alejoide</a
+				>
+			</li>
+			<li>
+				<a href="https://github.com/4l3j0Ok" target="_blank"
+					><Icon name="mdi:github" /> github.com/4l3j0Ok</a
+				>
+			</li>
+		</ul>
 	</div>
 </header>
 
@@ -19,28 +50,55 @@ import ProfilePicture from "../assets/profile.webp";
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 4em;
+		gap: 2em;
+		margin-bottom: 3em;
 	}
 	img {
-		width: 240px;
+		width: 200px;
 		height: auto;
 		border-radius: 50%;
 		object-fit: cover;
 		box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 	}
-	.profile-info {
+	.profile-header {
 		text-align: right;
+	}
+	.profile-info h1 {
+		margin: 0;
+	}
+	.profile-info p {
+		margin-bottom: 1em;
+	}
+	.contact {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.contact li {
+		margin: 0.15em 0;
+	}
+	.contact :global(svg) {
+		vertical-align: -0.15em;
 	}
 
 	@media (max-width: 900px) {
 		img {
-			width: 180px;
+			width: 160px;
 		}
 	}
 
 	@media (max-width: 600px) {
 		img {
-			width: 120px;
+			width: 100px;
+		}
+	}
+
+	@media print {
+		header {
+			margin-bottom: 1.5em;
+		}
+		img {
+			width: 150px;
 		}
 	}
 </style>

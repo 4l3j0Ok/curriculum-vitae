@@ -3,7 +3,7 @@ import DownloadButton from "../components/DownloadButton.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -106,6 +106,31 @@ import DownloadButton from "../components/DownloadButton.astro";
 	}
 
 	@media print {
+		body {
+			font-size: 0.85em;
+		}
+
+		.content {
+			width: 100%;
+			margin: 0;
+		}
+
+		section {
+			margin-bottom: 1.5em;
+		}
+
+		h2 {
+			margin: 0 0 0.3em;
+		}
+
+		hr {
+			margin-bottom: 0.8em;
+		}
+
+		ul {
+			margin: 0.3em 0 0.6em;
+		}
+
 		.noprint {
 			display: none;
 		}

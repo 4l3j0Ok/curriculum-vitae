@@ -1,5 +1,8 @@
 ---
-import { certifications } from "../data";
+import { certifications, certificationsInProgress } from "../data";
+
+const featured = certifications.filter((c) => c.featured);
+const others = certifications.filter((c) => !c.featured);
 ---
 
 <section class="certificates" id="certificates">
@@ -7,46 +10,53 @@ import { certifications } from "../data";
         Certificaciones <a href="#certificates" class="pilcrow">&para;</a>
     </h2>
     <hr />
-    {
-        certifications.map((certification) => (
-            <article class="certificate-item">
-                <div class="certificate-header">
-                    <div class="certificate-title">
-                        <h3>{certification.title}</h3>
-                        <a
-                            href={certification.certificateUrl}
-                            class="noprint"
-                            target="_blank"
-                        >
-                            Ver certificado
-                        </a>
-                    </div>
-                    <div class="info">
-                        <h3>{certification.institution}</h3>
-                        <p>{certification.date}</p>
-                    </div>
-                </div>
-            </article>
-        ))
-    }
+    <p>
+        <b>En curso:</b>{" "}
+        {
+            certificationsInProgress.map((c, i) => (
+                <>
+                    {c.title} ({c.institution}, {c.date})
+                    {i < certificationsInProgress.length - 1 ? "; " : "."}
+                </>
+            ))
+        }
+    </p>
+    <p>
+        <b>Destacadas:</b>{" "}
+        {
+            featured.map((c, i) => (
+                <>
+                    <a href={c.certificateUrl} target="_blank">{c.title}</a> ({c.institution}, {c.date})
+                    {i < featured.length - 1 ? "; " : "."}
+                </>
+            ))
+        }
+    </p>
+    <p>
+        <b>Otras:</b>{" "}
+        {
+            others.map((c, i) => (
+                <>
+                    <a href={c.certificateUrl} target="_blank">{c.title}</a> ({c.institution}, {c.date})
+                    {i < others.length - 1 ? "; " : "."}
+                </>
+            ))
+        }
+    </p>
 </section>
 
 <style>
-    .certificate-item a {
+    .certificates p {
+        margin-bottom: 0.5em;
+    }
+
+    .certificates a {
         text-decoration: underline;
     }
 
-    .certificate-title {
-        margin-top: 0;
-    }
-
-    .certificate-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .certificate-header .info {
-        text-align: right;
+    @media print {
+        .certificates a {
+            text-decoration: none;
+        }
     }
 </style>

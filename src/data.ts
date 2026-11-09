@@ -1,17 +1,14 @@
 export const experience = [
   {
-    company: "Leafnoise",
-    position: "Desarrollador backend",
+    company: "FlexCore",
+    position: "Fundador y desarrollador",
     location: "Buenos Aires, Argentina",
-    period: "Agosto 2020 – Septiembre 2022",
+    period: "Agosto 2025 – Actualidad",
     responsibilities: [
-      "Desarrollo de producto Moorea para clientes de Leafnoise.",
-      "Creación de APIs y servicios web RESTful y SOAP.",
-      "Conexión de APIs con base de datos MongoDB y SQL.",
-      "Diseño y optimización de consulta para bases de datos.",
-      "Uso efectivo de Git para control de versiones.",
-      "Colaboración en equipos a través de plataformas como GitLab.",
-      "Metodologías ágiles y trabajo en equipo.",
+      "Fundación y operación en solitario de Gestión Digital (gestion-digital.com), un SaaS en producción para comercios que integra punto de venta, caja, stock, compras y cuentas corrientes, con soporte multisucursal y roles por usuario.",
+      "Desarrollo full stack del producto con FastAPI, React y PostgreSQL.",
+      "Despliegue en Kubernetes con pipelines de CI/CD y operación de la infraestructura de producción.",
+      "Trato directo con clientes: relevamiento, implementación, capacitación y soporte.",
     ],
   },
   {
@@ -20,37 +17,51 @@ export const experience = [
     location: "Buenos Aires, Argentina",
     period: "Septiembre 2022 – Actualidad",
     responsibilities: [
-      "Gestión y contenerización de aplicaciones web con Docker.",
-      "Automatización de despliegue con herramientas de CI/CD.",
-      "Orquestación de contenedores con Kubernetes.",
-      "Exposición de aplicaciones con servidores web Apache y NGINX.",
-      "Amplio conocimiento en servicios cloud como Digital Ocean, Cloudflare, Vultr y Amazon Web Services (AWS) con EC2, S3, EKS, ECS, entre otros.",
-      "Despliegue de servicios Java con Jboss EAP/ WildFly.",
-      "Conocimiento en herramientas de IaC como Terraform, Ansible, Vagrant.",
-      "Creación y administración de paquetes con Helm.",
-      "Administración de múltiples infraestructuras, tanto internas como de clientes.",
-      "Monitoreo y observabilidad de aplicaciones.",
-      "Scripting con Bash, Powershell y Python.",
+      "Responsable de la migración de proyectos de Docker a Kubernetes para lograr alta disponibilidad.",
+      "Implementación de aplicaciones basadas en microservicios sobre Kubernetes para múltiples clientes, en infraestructuras y clouds diferentes.",
+      "Creación de entornos de desarrollo completos para proyectos nuevos y existentes, aplicando estándares de desarrollo.",
+      "Automatización de despliegues con pipelines de CI/CD (Jenkins, GitHub Actions, GitLab CI y ArgoCD) y empaquetado de aplicaciones con Helm.",
+      "Administración de infraestructuras en AWS (EC2, S3, EKS, ECS), DigitalOcean, Vultr y Cloudflare, tanto internas como de clientes.",
+      "Infraestructura como código con Terraform y Ansible.",
+      "Despliegue de servicios Java con JBoss EAP / WildFly y exposición de aplicaciones con Apache y NGINX.",
+      "Monitoreo y observabilidad con Grafana, Prometheus y Elastic Kibana; scripting con Bash, PowerShell y Python.",
       "Implementación de RAG, creación de harnesses para proyectos de desarrollo y despliegue de LLMs en cloud y on-premise.",
+    ],
+  },
+  {
+    company: "Leafnoise",
+    position: "Desarrollador backend",
+    location: "Buenos Aires, Argentina",
+    period: "Agosto 2020 – Septiembre 2022",
+    responsibilities: [
+      "Desarrollo de Moorea, plataforma de microservicios para la despapelización y gestión de formularios con flujos de trabajo (alternativa a Camunda), implementada en clientes de Leafnoise.",
+      "Creación de APIs y servicios web REST y SOAP conectados a bases de datos MongoDB y SQL.",
+      "Diseño y optimización de consultas para bases de datos.",
+      "Trabajo en equipo con metodologías ágiles, Git y GitLab.",
     ],
   },
 ];
 
+export const languages = [
+  { name: "Español", level: "nativo" },
+  { name: "Inglés", level: "intermedio, lectura de documentación técnica" },
+];
+
 export const education = [
-  {
-    institution: "Escuela de Educación Secundaria Técnica N° 2 - Manuel Mateo",
-    degree:
-      "Tecnicatura en informática con orientación en redes y programación",
-    location: "Buenos Aires, Argentina",
-    period: "Marzo 2012 – Noviembre 2019",
-  },
   {
     institution:
       "Instituto Superior de Formación Docente y Técnica Nº 93 Arturo Umberto Illia",
     degree:
       "Tecnicatura Superior en Análisis, Desarrollo y Programación de Aplicaciones",
     location: "Buenos Aires, Argentina",
-    period: "Marzo 2023 – Actualidad",
+    period: "Marzo 2023 – Abril 2027 (estimado)",
+  },
+  {
+    institution: "Escuela de Educación Secundaria Técnica N° 2 - Manuel Mateo",
+    degree:
+      "Tecnicatura en informática con orientación en redes y programación",
+    location: "Buenos Aires, Argentina",
+    period: "Marzo 2012 – Noviembre 2019",
   },
 ];
 
@@ -135,7 +146,7 @@ export const skills = {
           name: "Herramientas y modelos",
           items: [
             "OpenCode",
-            "Claude",
+            "Claude Code",
             "Ollama",
             "LM Studio",
             "LiteLLM",
@@ -155,7 +166,29 @@ export const skills = {
   ],
 };
 
+export const certificationsInProgress = [
+  {
+    title: "AWS Certified CloudOps Engineer – Associate",
+    institution: "Amazon Web Services",
+    date: "fecha estimada: enero 2027",
+  },
+];
+
 export const certifications = [
+  {
+    title: "Cloud DevOps (Docker, Kubernetes y Jenkins)",
+    certificateUrl: "/alejo-sarmiento-certificado-cloud-devops.pdf",
+    institution: "Educación IT",
+    date: "may. 2022",
+    featured: true,
+  },
+  {
+    title: "Ultimate Docker",
+    certificateUrl: "/alejo-sarmiento-certificado-ultimate-docker.pdf",
+    institution: "Academia Hola Mundo",
+    date: "jun. 2024",
+    featured: true,
+  },
   {
     title: "Qt/PySide: Interfaces Gráficas con Python",
     certificateUrl: "/alejo-sarmiento-certificado-pyside.pdf",
@@ -169,12 +202,6 @@ export const certifications = [
     date: "ago. 2024",
   },
   {
-    title: "Ultimate Docker",
-    certificateUrl: "/alejo-sarmiento-certificado-ultimate-docker.pdf",
-    institution: "Academia Hola Mundo",
-    date: "jun. 2024",
-  },
-  {
     title: "Ultimate Python",
     certificateUrl: "/alejo-sarmiento-certificado-ultimate-python.pdf",
     institution: "Academia Hola Mundo",
@@ -185,12 +212,6 @@ export const certifications = [
     certificateUrl: "/alejo-sarmiento-certificado-python-sin-fronteras.pdf",
     institution: "Udemy",
     date: "mar. 2024",
-  },
-  {
-    title: "Cloud Devops (Docker, Kubernetes y Jenkins)",
-    certificateUrl: "/alejo-sarmiento-certificado-cloud-devops.pdf",
-    institution: "Educación IT",
-    date: "may. 2022",
   },
   {
     title: "Bases de datos NoSQL con MongoDB y NodeJS",
