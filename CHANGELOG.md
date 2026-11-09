@@ -1,3 +1,9 @@
+# [1.4.0](https://github.com/[secure]/curriculum-vitae/compare/1.3.1...1.4.0) (2026-11-09)
+
+### Features
+
+* update CV content and fit it in two pages ([91847a2](https://github.com/[secure]/curriculum-vitae/commit/91847a265bbf9b2b48581033bea82ed0a8bf2dd6))
+
 ## [1.3.1](https://github.com/[secure]/curriculum-vitae/compare/1.3.0...1.3.1) (2026-11-01)
 
 ### Bug Fixes
