@@ -1,3 +1,9 @@
+## [1.4.1](https://github.com/[secure]/curriculum-vitae/compare/1.4.0...1.4.1) (2026-11-19)
+
+### Bug Fixes
+
+* **security:** pin nginx 1.30.7-alpine (CVE-2026-123007 NGINX2Root) ([01cd2c1](https://github.com/[secure]/curriculum-vitae/commit/01cd2c1e1ff6d8f19b9d4eb0f135b5a3fd685afc))
+
 # [1.4.0](https://github.com/[secure]/curriculum-vitae/compare/1.3.1...1.4.0) (2026-11-09)
 
 ### Features
