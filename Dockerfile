@@ -33,7 +33,7 @@ RUN busybox httpd -p 8080 -h /site \
         --output "/out/Alejo Sarmiento Curriculum Vitae.pdf" \
     || (cat /tmp/gotenberg.log; exit 1)
 
-FROM nginx:1.30.7-alpine AS runtime
+FROM nginx:1.30.8-alpine AS runtime
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY --from=pdf /out/ /usr/share/nginx/html/
