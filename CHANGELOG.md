@@ -1,3 +1,9 @@
+## [1.4.2](https://github.com/[secure]/curriculum-vitae/compare/1.4.1...1.4.2) (2026-11-25)
+
+### Bug Fixes
+
+* **deps:** actualizar astro e imagen nginx ([06e84bf](https://github.com/[secure]/curriculum-vitae/commit/06e84bf04a0c440e936a6e059f76dbae84b47a7e))
+
 ## [1.4.1](https://github.com/[secure]/curriculum-vitae/compare/1.4.0...1.4.1) (2026-11-19)
 
 ### Bug Fixes
